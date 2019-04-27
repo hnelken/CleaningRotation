@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastViewController" customModule="CleaningRotation" customModuleProvider="target">
+            <connections>
+                <outlet property="cleaningDayLabel" destination="i7L-ub-Mbv" id="57j-kf-LCx"/>
+                <outlet property="dateLabel" destination="A8p-51-dta" id="Lvr-uA-5aQ"/>
+                <outlet property="detailLabel" destination="b3K-9f-kGU" id="JpV-3f-I71"/>
+                <outlet property="forecastLabel" destination="CcB-c5-dOU" id="3ZO-vx-dEb"/>
+                <outlet property="notCleaningDayLabel" destination="RII-LU-H17" id="maC-9o-gRr"/>
+                <outlet property="view" destination="iN0-l3-epB" id="s6n-yc-UAc"/>
+                <outlet property="weekdayLabel" destination="CVI-cF-ofh" id="dKH-0v-tjW"/>
+                <outletCollection property="separators" destination="Tn4-R2-Hm8" collectionClass="NSMutableArray" id="rZz-6r-bt0"/>
+                <outletCollection property="separators" destination="B70-li-beb" collectionClass="NSMutableArray" id="wCe-OJ-p1p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitchen" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcB-c5-dOU">
+                    <rect key="frame" x="40" y="104.5" width="295" height="52"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekday" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVI-cF-ofh">
+                    <rect key="frame" x="40" y="451.5" width="295" height="39"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8p-51-dta">
+                    <rect key="frame" x="40" y="506.5" width="295" height="39"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not a cleaning day" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RII-LU-H17">
+                    <rect key="frame" x="40" y="251.5" width="295" height="104"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Day!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7L-ub-Mbv">
+                    <rect key="frame" x="40" y="251.5" width="295" height="104"/>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tn4-R2-Hm8" userLabel="Top Separator">
+                    <rect key="frame" x="16" y="196.5" width="343" height="16"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="hyd-q9-Iej"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B70-li-beb" userLabel="Bottom Separator">
+                    <rect key="frame" x="16" y="395.5" width="343" height="16"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="FyN-Eo-fE6"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clean:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3K-9f-kGU">
+                    <rect key="frame" x="40" y="49.5" width="295" height="39"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CcB-c5-dOU" firstAttribute="top" secondItem="b3K-9f-kGU" secondAttribute="bottom" constant="16" id="7SF-wr-g8n"/>
+                <constraint firstItem="i7L-ub-Mbv" firstAttribute="top" secondItem="Tn4-R2-Hm8" secondAttribute="bottom" constant="39" id="7pS-VM-nDD"/>
+                <constraint firstItem="b3K-9f-kGU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="CB4-Jh-CgI"/>
+                <constraint firstItem="Tn4-R2-Hm8" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="CSD-An-0Ui"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b3K-9f-kGU" secondAttribute="trailing" constant="40" id="HW7-lv-8e2"/>
+                <constraint firstItem="RII-LU-H17" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="L3z-7N-KQH"/>
+                <constraint firstItem="B70-li-beb" firstAttribute="top" secondItem="i7L-ub-Mbv" secondAttribute="bottom" constant="40" id="LVp-K0-SWb"/>
+                <constraint firstItem="CVI-cF-ofh" firstAttribute="top" secondItem="B70-li-beb" secondAttribute="bottom" constant="40" id="Mi0-bo-JCK"/>
+                <constraint firstItem="Tn4-R2-Hm8" firstAttribute="top" secondItem="CcB-c5-dOU" secondAttribute="bottom" constant="40" id="OWh-8r-nPS"/>
+                <constraint firstItem="CVI-cF-ofh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="OkM-2k-3dR"/>
+                <constraint firstItem="CcB-c5-dOU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Soe-Yz-2ao"/>
+                <constraint firstItem="i7L-ub-Mbv" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Ywg-ql-6K7"/>
+                <constraint firstItem="A8p-51-dta" firstAttribute="top" secondItem="CVI-cF-ofh" secondAttribute="bottom" constant="16" id="Yyt-w9-MN7"/>
+                <constraint firstItem="CcB-c5-dOU" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Zg0-KV-l7H"/>
+                <constraint firstItem="i7L-ub-Mbv" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-40" id="dxa-6k-jQM"/>
+                <constraint firstItem="Tn4-R2-Hm8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="eGl-H6-Nq4"/>
+                <constraint firstItem="A8p-51-dta" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="eSE-8v-TmU"/>
+                <constraint firstItem="RII-LU-H17" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-40" id="g2v-uj-Ubt"/>
+                <constraint firstItem="RII-LU-H17" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="goU-Bk-hwB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RII-LU-H17" secondAttribute="trailing" constant="40" id="iYG-ub-0Iv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="i7L-ub-Mbv" secondAttribute="trailing" constant="40" id="ik4-Po-vsC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Tn4-R2-Hm8" secondAttribute="trailing" constant="16" id="k7r-N3-Q3n"/>
+                <constraint firstItem="B70-li-beb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="lBd-kY-zwK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="B70-li-beb" secondAttribute="trailing" constant="16" id="mGP-s1-JSn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CcB-c5-dOU" secondAttribute="trailing" constant="40" id="nfb-ci-6xH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CVI-cF-ofh" secondAttribute="trailing" constant="40" id="qRk-T9-l5r"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="A8p-51-dta" secondAttribute="trailing" constant="40" id="sFO-DS-mNf"/>
+                <constraint firstItem="i7L-ub-Mbv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="vYS-Mc-AQk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="93.599999999999994" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>
