@@ -18,19 +18,33 @@ final class ForecastViewModel {
 
     weak var delegate: ForecastViewModelDelegate?
 
-    private var currentRoom: Room = .livingRoom
-    private var lastRoom: Room = .livingRoom
-    private var recentCleaningDay = false
+    // MARK: - Defaults
 
-    private let cleaningDays = [4, 7]
+    private var lastRoom: Room {
+        get {
+            return Defaults.lastRoom
+        } set {
+            Defaults.setLastRoom(newValue)
+        }
+    }
 
-    private let rotation: [Room] = [
-        .livingRoom,
-        .kitchen,
-        .bathroom,
-        .bedrooms,
-        .diningRoom
-    ]
+    private var currentRoom: Room {
+        get {
+            return Defaults.currentRoom
+        } set {
+            Defaults.setCurrentRoom(newValue)
+        }
+    }
+
+    private var recentCleaningDay: Bool {
+        get {
+            return Defaults.recentCleaningDay
+        } set {
+            Defaults.setRecentCleaningDay(newValue)
+        }
+    }
+
+    // MARK: - UI Properties
 
     var detailText: String {
         return isCleaningDay
@@ -64,6 +78,17 @@ final class ForecastViewModel {
         }
     }
 
+    // MARK: - Forecast
+
+    private let cleaningDays = [4, 7]
+    private let rotation: [Room] = [
+        .livingRoom,
+        .kitchen,
+        .bathroom,
+        .bedrooms,
+        .diningRoom
+    ]
+
     var isCleaningDay: Bool {
         let weekday = Calendar.current.component(.weekday, from: Date())
         return cleaningDays.contains(weekday)
@@ -75,8 +100,8 @@ final class ForecastViewModel {
             recentCleaningDay = true
         } else {
             if recentCleaningDay {
-                advanceForecast()
                 recentCleaningDay = false
+                advanceForecast()
             }
             delegate?.updateUIForNonCleaningDay()
         }

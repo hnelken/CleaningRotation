@@ -14,6 +14,15 @@
 		D8BAB8BF2274F1C0007BCCA9 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BAB8BE2274F1C0007BCCA9 /* Room.swift */; };
 		D8BAB8C12274F3F8007BCCA9 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BAB8C02274F3F8007BCCA9 /* ForecastViewModel.swift */; };
 		D8BAB8C32274F521007BCCA9 /* ForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8BAB8C22274F521007BCCA9 /* ForecastViewController.xib */; };
+		D8BAB8C522750954007BCCA9 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BAB8C422750954007BCCA9 /* Defaults.swift */; };
+		D8BAB8CF2275101F007BCCA9 /* icon120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BAB8C72275101F007BCCA9 /* icon120x120.png */; };
+		D8BAB8D02275101F007BCCA9 /* icon58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BAB8C82275101F007BCCA9 /* icon58x58.png */; };
+		D8BAB8D12275101F007BCCA9 /* icon20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BAB8C92275101F007BCCA9 /* icon20x20.png */; };
+		D8BAB8D22275101F007BCCA9 /* icon80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BAB8CA2275101F007BCCA9 /* icon80x80.png */; };
+		D8BAB8D32275101F007BCCA9 /* icon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BAB8CB2275101F007BCCA9 /* icon76x76.png */; };
+		D8BAB8D42275101F007BCCA9 /* icon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BAB8CC2275101F007BCCA9 /* icon29x29.png */; };
+		D8BAB8D52275101F007BCCA9 /* icon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BAB8CD2275101F007BCCA9 /* icon40x40.png */; };
+		D8BAB8D62275101F007BCCA9 /* icon167x167.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BAB8CE2275101F007BCCA9 /* icon167x167.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		D8BAB8BE2274F1C0007BCCA9 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		D8BAB8C02274F3F8007BCCA9 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		D8BAB8C22274F521007BCCA9 /* ForecastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastViewController.xib; sourceTree = "<group>"; };
+		D8BAB8C422750954007BCCA9 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		D8BAB8C72275101F007BCCA9 /* icon120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120x120.png; sourceTree = "<group>"; };
+		D8BAB8C82275101F007BCCA9 /* icon58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58x58.png; sourceTree = "<group>"; };
+		D8BAB8C92275101F007BCCA9 /* icon20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon20x20.png; sourceTree = "<group>"; };
+		D8BAB8CA2275101F007BCCA9 /* icon80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80x80.png; sourceTree = "<group>"; };
+		D8BAB8CB2275101F007BCCA9 /* icon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon76x76.png; sourceTree = "<group>"; };
+		D8BAB8CC2275101F007BCCA9 /* icon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon29x29.png; sourceTree = "<group>"; };
+		D8BAB8CD2275101F007BCCA9 /* icon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40x40.png; sourceTree = "<group>"; };
+		D8BAB8CE2275101F007BCCA9 /* icon167x167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon167x167.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +77,32 @@
 			isa = PBXGroup;
 			children = (
 				D8BAB8AC2274F08B007BCCA9 /* AppDelegate.swift */,
+				D8BAB8C02274F3F8007BCCA9 /* ForecastViewModel.swift */,
 				D8BAB8AE2274F08B007BCCA9 /* ForecastViewController.swift */,
 				D8BAB8C22274F521007BCCA9 /* ForecastViewController.xib */,
 				D8BAB8BE2274F1C0007BCCA9 /* Room.swift */,
-				D8BAB8C02274F3F8007BCCA9 /* ForecastViewModel.swift */,
+				D8BAB8C422750954007BCCA9 /* Defaults.swift */,
 				D8BAB8B32274F08D007BCCA9 /* Assets.xcassets */,
+				D8BAB8C62275101F007BCCA9 /* AppIcon */,
 				D8BAB8B52274F08D007BCCA9 /* LaunchScreen.storyboard */,
 				D8BAB8B82274F08D007BCCA9 /* Info.plist */,
 			);
 			path = CleaningRotation;
+			sourceTree = "<group>";
+		};
+		D8BAB8C62275101F007BCCA9 /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				D8BAB8C92275101F007BCCA9 /* icon20x20.png */,
+				D8BAB8CC2275101F007BCCA9 /* icon29x29.png */,
+				D8BAB8C82275101F007BCCA9 /* icon58x58.png */,
+				D8BAB8CD2275101F007BCCA9 /* icon40x40.png */,
+				D8BAB8CB2275101F007BCCA9 /* icon76x76.png */,
+				D8BAB8CA2275101F007BCCA9 /* icon80x80.png */,
+				D8BAB8C72275101F007BCCA9 /* icon120x120.png */,
+				D8BAB8CE2275101F007BCCA9 /* icon167x167.png */,
+			);
+			path = AppIcon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +164,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8BAB8B72274F08D007BCCA9 /* LaunchScreen.storyboard in Resources */,
+				D8BAB8D12275101F007BCCA9 /* icon20x20.png in Resources */,
+				D8BAB8D62275101F007BCCA9 /* icon167x167.png in Resources */,
+				D8BAB8D42275101F007BCCA9 /* icon29x29.png in Resources */,
+				D8BAB8CF2275101F007BCCA9 /* icon120x120.png in Resources */,
+				D8BAB8D32275101F007BCCA9 /* icon76x76.png in Resources */,
+				D8BAB8D52275101F007BCCA9 /* icon40x40.png in Resources */,
+				D8BAB8D22275101F007BCCA9 /* icon80x80.png in Resources */,
 				D8BAB8C32274F521007BCCA9 /* ForecastViewController.xib in Resources */,
 				D8BAB8B42274F08D007BCCA9 /* Assets.xcassets in Resources */,
+				D8BAB8D02275101F007BCCA9 /* icon58x58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +186,7 @@
 			files = (
 				D8BAB8AF2274F08B007BCCA9 /* ForecastViewController.swift in Sources */,
 				D8BAB8C12274F3F8007BCCA9 /* ForecastViewModel.swift in Sources */,
+				D8BAB8C522750954007BCCA9 /* Defaults.swift in Sources */,
 				D8BAB8AD2274F08B007BCCA9 /* AppDelegate.swift in Sources */,
 				D8BAB8BF2274F1C0007BCCA9 /* Room.swift in Sources */,
 			);
