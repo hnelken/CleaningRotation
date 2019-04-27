@@ -77,15 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				D8BAB8AC2274F08B007BCCA9 /* AppDelegate.swift */,
-				D8BAB8C02274F3F8007BCCA9 /* ForecastViewModel.swift */,
-				D8BAB8AE2274F08B007BCCA9 /* ForecastViewController.swift */,
-				D8BAB8C22274F521007BCCA9 /* ForecastViewController.xib */,
-				D8BAB8BE2274F1C0007BCCA9 /* Room.swift */,
-				D8BAB8C422750954007BCCA9 /* Defaults.swift */,
-				D8BAB8B32274F08D007BCCA9 /* Assets.xcassets */,
-				D8BAB8C62275101F007BCCA9 /* AppIcon */,
-				D8BAB8B52274F08D007BCCA9 /* LaunchScreen.storyboard */,
-				D8BAB8B82274F08D007BCCA9 /* Info.plist */,
+				D8BAB8D822751105007BCCA9 /* Model */,
+				D8BAB8D922751112007BCCA9 /* Forecast */,
+				D8BAB8D7227510D8007BCCA9 /* Resources */,
 			);
 			path = CleaningRotation;
 			sourceTree = "<group>";
@@ -103,6 +97,36 @@
 				D8BAB8CE2275101F007BCCA9 /* icon167x167.png */,
 			);
 			path = AppIcon;
+			sourceTree = "<group>";
+		};
+		D8BAB8D7227510D8007BCCA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8BAB8B82274F08D007BCCA9 /* Info.plist */,
+				D8BAB8B52274F08D007BCCA9 /* LaunchScreen.storyboard */,
+				D8BAB8B32274F08D007BCCA9 /* Assets.xcassets */,
+				D8BAB8C62275101F007BCCA9 /* AppIcon */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8BAB8D822751105007BCCA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8BAB8BE2274F1C0007BCCA9 /* Room.swift */,
+				D8BAB8C422750954007BCCA9 /* Defaults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8BAB8D922751112007BCCA9 /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				D8BAB8C02274F3F8007BCCA9 /* ForecastViewModel.swift */,
+				D8BAB8AE2274F08B007BCCA9 /* ForecastViewController.swift */,
+				D8BAB8C22274F521007BCCA9 /* ForecastViewController.xib */,
+			);
+			path = Forecast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7WMT94Y93;
-				INFOPLIST_FILE = CleaningRotation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CleaningRotation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7WMT94Y93;
-				INFOPLIST_FILE = CleaningRotation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CleaningRotation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
